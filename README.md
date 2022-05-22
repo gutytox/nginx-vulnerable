@@ -1,6 +1,8 @@
 # Vulnerable-nginx
 
-Vulnerable-nginx is an intentionally vulnerable NGINX setup that shows some common nginx misconfigurations. A blog post about the misconfigurations can be read here: [https://blog.detectify.com/2020/11/10/common-nginx-misconfigurations/](https://blog.detectify.com/2020/11/10/common-nginx-misconfigurations/)
+Esta es una aplicaciòn intencionalmente vulnerable basada en [https://github.com/detectify/vulnerable-nginx](https://github.com/detectify/vulnerable-nginx), esta especialmente diseñado para la charla Nginx Security de [https://exploitland.com/](https://exploitland.com/)ExploitLand.com
+
+Gran parte de las configuraciones inseguras de Nginx se tomaron en base a la siguiente publicacion: [https://blog.detectify.com/2020/11/10/common-nginx-misconfigurations/](https://blog.detectify.com/2020/11/10/common-nginx-misconfigurations/)
 
 ## Installation
 
@@ -13,4 +15,4 @@ docker-compose up -d
 
 ## Usage
 
-Visit http://localhost:5000/cats/ to get started (replace localhost with the ip of your docker-machine if you are using Docker Toolbox)
+Acceder a http://127.0.0.1/

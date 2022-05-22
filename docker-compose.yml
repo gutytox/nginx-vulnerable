@@ -2,14 +2,22 @@ version: '2.1'
 services:
   nginx:
     build: nginx
-    command: nginx -g "daemon off;"
+    command: nginx -g "daemon off;" 
     container_name: app_nginx
     depends_on:
       - apache
+      - v1.apache.api
+      - tomcat
     ports:
-      - "5000:5000"
+      - "80:5000"
   apache:
     build: apache
     container_name: app_apache
+  v1.apache.api:
+    build: apache_api
+    container_name: app_apache_api
     #ports:
     #  - "5001:80"
+  tomcat:
+    build: tomcat_private
+    container_name: tomcat_interno
